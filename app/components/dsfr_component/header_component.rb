@@ -1,5 +1,5 @@
 class DsfrComponent::HeaderComponent < DsfrComponent::Base
-  renders_one :search
+  renders_one :search, :operator_image
   renders_many :tool_links, "DsfrComponent::HeaderComponent::ToolLinkComponent"
   renders_many :direct_links, types: {
     simple: "DsfrComponent::HeaderComponent::DirectLinkComponent",
